@@ -5,9 +5,15 @@ This project demonstrates an end-to-end Data & AI architecture built on **Databr
 
 ## 🛠️ Architecture & Tech Stack
 * **Data Platform:** Databricks (Spark SQL, Unity Catalog)
-* **Data Modeling:** Star Schema (Fact table + Dimension table with foreign key relationships)
+* **Data Modeling:** Star Schema (Fact table + Dimension table with foreign key relationships & time-series data)
 * **Metadata Governance:** Table & Column Comments for semantic context enhancement
-* **AI Agent:** Databricks Genie Space (Managed Text-to-SQL Agent with Trusted Q&A)
+* **AI Agent:** Databricks Genie Space (Managed Text-to-SQL Agent with Trusted Q&A and Instructions)
+
+## 🤖 AI Agent (Genie Space) Configuration
+The project includes a configured **Genie AI Agent** (`GlobalSales-Intelligence-Agent`) designed for business users to query data naturally. 
+
+- **General Instructions:** Configured to enforce proper table joins (`gold_sales_performance` joined with `dim_regions` on `region = region_code`) and accurate metric aggregations.
+- **Trusted Q&A Examples:** Curated examples built-in to eliminate hallucinations and ensure correct SQL generation for time-series trends and regional performance.
 
 ## 📂 Repository Structure
 - `create_gold_tables.py`: PySpark script for generating and registering the Gold layer tables with rich metadata comments and foreign key definitions.
