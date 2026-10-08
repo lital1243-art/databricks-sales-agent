@@ -11,3 +11,8 @@ This project demonstrates an end-to-end Data & AI architecture built on **Databr
 
 ## 📂 Repository Structure
 - `create_gold_tables.py`: PySpark script for generating and registering the Gold layer tables with rich metadata comments and foreign key definitions.
+
+## 📊 Genie Agent in Action
+![Genie Agent Demo](<img width="1705" height="898" alt="image" src="https://github.com/user-attachments/assets/598317d7-6f98-490e-b283-be5f734c912c" />
+<img width="1711" height="846" alt="image" src="https://github.com/user-attachments/assets/87905769-58e0-4289-998b-ac499ba2019c" />
+)
